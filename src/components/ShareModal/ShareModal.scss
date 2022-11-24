@@ -1,0 +1,30 @@
+.modal {
+  background: #aed9e0;
+  position: absolute;
+  top: 0;
+  transform: translate(-50% , calc(-100% - 0.4rem));
+  border-radius: .4rem;
+  padding: 1.8rem 2rem;
+  display: flex;
+
+  .modal__icon {
+    transform: scale(2);
+    cursor: pointer;
+    transition: .3s all;
+    display: flex;
+
+    &:hover {
+      transform: scale(2.2);
+    }
+
+    &:not(:last-child) {
+      margin-right: 2.4rem;
+    }  
+  }
+
+  input {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+  }
+}

@@ -1,0 +1,50 @@
+.form {
+  display: flex;
+  border-top: 1px solid #D3D3D3;
+}
+
+.input {
+  border: none;
+  border-radius: 0;
+  padding: 5%;
+  width: 80%;
+  font-size: 1.2em;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+.sendButton {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #e07a5f;
+  padding: 20px;
+  display: inline-block;
+  border: none;
+  width: 15rem;
+  margin-right: 1rem;
+  border-radius: 6rem;
+  align-self: center;
+  cursor: pointer;
+}
+
+.attach {
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  .attach__icon {
+    transform: scale(1.5);
+    cursor: pointer;
+    transition: .3s all;
+
+    &:hover {
+      transform: scale(2) rotate(-45deg);
+    }
+  }
+}
